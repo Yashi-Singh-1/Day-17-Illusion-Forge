@@ -42,7 +42,6 @@ Day-17-Illusion-Forge/
 │
 ├── index.html        # Main HTML file
 ├── styles.css        # CSS styles for Illusion Forge
-└── script.js         # Optional JavaScript for interactions
 </code></pre>
 
 <h2 id="tools-and-technologies">Tools and Technologies</h2>
