@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.penrose {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.penrose-side {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(to bottom, #3498db 0%, #3498db 50%, #e74c3c 50%, #e74c3c 100%);
+    transform-origin: bottom right;
+}
+
+.side1 {
+    transform: rotate(-30deg) skewX(30deg);
+    top: 50px;
+    left: 50px;
+}
+
+.side2 {
+    transform: rotate(90deg) skewX(30deg);
+    top: 50px;
+    left: 50px;
+}
+
+.side3 {
+    transform: rotate(210deg) skewX(30deg);
+    top: 50px;
+    left: 50px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.penrose {
+    animation: rotate 20s linear infinite;
+}
